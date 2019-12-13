@@ -23,4 +23,7 @@ test:
 production:
   <<: *default
   adapter: postgresql
+  pool: 5
   database: mydatabase
+  username: ikuya
+  password: <%= ENV['xxxx_DATABASE_PASSWORD'] %> 

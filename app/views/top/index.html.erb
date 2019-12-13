@@ -1,0 +1,11 @@
+<% if logged_in? %>
+ようこそ<%= current_user.name %>
+<%= link_to 'ログアウト', logout_path , method: :delete%>
+
+<%= current_user.nickname %>
+<%= image_tag(current_user.image) %>
+<% else %>
+
+<%= link_to "Twitterで登録・ログイン",  '/auth/twitter', class: 'btn btn-primary btn-sm' %>
+
+<% end %>
