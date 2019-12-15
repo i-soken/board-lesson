@@ -10,6 +10,7 @@ gem 'sqlite3', groups: %w(test development), require: false
 gem 'pg', groups: %w(production), require: false
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'dotenv-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
