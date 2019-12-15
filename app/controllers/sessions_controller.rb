@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+    
+    protect_from_forgery except: :destroy
 
   def create
     user = User.find_or_create_from_auth(request.env['omniauth.auth'])
