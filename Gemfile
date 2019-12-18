@@ -28,9 +28,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'nokogiri', '~> 1.10.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
+gem 'rails_12factor', group: :production
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', '>= 1.4.2'
+gem 'bootstrap', '~> 4.1.1'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
