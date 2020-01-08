@@ -1,5 +1,10 @@
 class User < ApplicationRecord
-    has_many :posts,dependent: :destroy
+    has_many :blogs,dependent: :destroy
+    has_many :user
+    def kannsuu 
+        puts("sssssssss")
+    end
+    
     def self.find_or_create_from_auth(auth)
         provider = auth[:provider]
         uid = auth[:uid]

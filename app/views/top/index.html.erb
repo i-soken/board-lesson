@@ -1,11 +1,21 @@
+
+
 <% if logged_in? %>
+<div id = "home">
 ようこそ<%= current_user.name %>
-<%= link_to 'ログアウト', logout_path , method: :delete%>
-
 <%= current_user.nickname %>
-<%= image_tag(current_user.image) %>
+<%= image_tag(current_user.image) %><br>
+<div class = "btn1">
+<%= link_to '投稿する',  '/blogs/new', class:'btn btn-outline-primary'  %>
+</div>
+<div class = "btn2">
+<%= link_to 'ログアウト', logout_path , method: :delete, class:'btn btn-outline-primary' %>
+</div>
+</div>
 <% else %>
-
-<%= link_to "Twitterで登録・ログイン",  '/auth/twitter', class: 'btn btn-primary btn-sm' %>
+<div class = "top">
+<h3>Twitterでログイン！↓↓</h3>
+<%= link_to "Twitterで登録・ログイン",  '/auth/twitter', class: 'btn btn-primary btn-sm'  %>
+</div>
 
 <% end %>

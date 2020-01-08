@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル:</strong>
+  <%= @blog.title %>
+  <%= @blog.content%>
+</p>
+
+<%= link_to '編集', edit_blog_path(@blog) %> |
+<%= link_to '一覧へ', blogs_path %>
