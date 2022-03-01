@@ -33,7 +33,7 @@ gem 'rails_12factor', group: :production
 gem 'bootsnap', '>= 1.4.2'
 gem 'bootstrap', '~> 4.1.1'
 gem 'actiontext'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'byebug'
 
 
